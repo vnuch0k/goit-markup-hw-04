@@ -127,9 +127,17 @@ nav {
   line-height: 1.14;
 }
 
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .auth-nav .contacts:hover,
-.auth-nav .contacts:focus {
+.auth-nav .contacts:focus,
+.contacts.link:hover,
+.contacts.link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .auth-nav .item:not(:last-child) {
@@ -149,6 +157,18 @@ nav {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.hero.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-hero.jpeg);
+  background-size: cover;
 }
 
 .hero-title {
@@ -224,6 +244,16 @@ nav {
 
 .features .item:not(:last-child) {
   margin-right: 30px;
+}
+
+/* иконки преимуществ */
+.features-icon {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 .features .title {
