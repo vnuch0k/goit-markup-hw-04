@@ -166,7 +166,7 @@ nav {
 
 .hero.overlay {
   max-width: 1600px;
-  min-height: 600px;
+  margin: 0 auto;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -254,13 +254,20 @@ nav {
 }
 
 /* иконки преимуществ */
-.features-icon {
+.icon-sizes {
   width: 270px;
   height: 120px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f5f4fa;
   border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .features .title {
@@ -354,7 +361,7 @@ nav {
 
 .member-description {
   text-align: center;
-  padding: 30px 20px;
+  padding: 30px 32px;
 }
 
 .member-socials {
@@ -419,13 +426,11 @@ nav {
 }
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-section:not(:last-child) {
   margin-right: 70px;
-}
-.footer-section.social {
-  padding-top: 12px;
 }
 
 /* logo bottom */
@@ -529,6 +534,10 @@ nav {
   margin-bottom: 30px;
 }
 
+.card .link {
+  display: block;
+}
+
 .card:nth-child(3n) {
   margin-right: 0px;
 }
@@ -537,8 +546,8 @@ nav {
   margin-bottom: 0;
 }
 
-.card:hover,
-.card:focus {
+.card .link:hover,
+.card .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
